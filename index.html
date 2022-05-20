@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>website Landing Page Design</title>
+</head>
+<body>
+<section>
+	<div class="content">
+		<div>
+			<h2>Cristiano Ronaldo</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<a href="#">Learn More</a>
+		</div>
+	</div>
+	<div class="imgBx">
+		<img src="img.png">
+	</div>
+
+	<ul class="nav" id="nav">
+		<li><a href="#" >Home</a></li>
+		<li><a href="#" class="active">About</a></li>
+		<li><a href="#" >Performance</a></li>
+		<li><a href="#" >Team</a></li>
+		<li><a href="#" >Ranking</a></li>
+	</ul>
+
+	<ul class="sci">
+		<li><a href="#">Facebook</a></li>
+		<li><a href="#">Twitter</a></li>
+		<li><a href="#">Instagram</a></li>
+	</ul>
+</section>
+
+<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+<script type="text/javascript">
+	function menuToggle() {
+		var nav=document.getElementById("nav");
+		nav.classList.toggle('active');
+
+		var toggle=document.getElementById("toggle");
+		toggle.classList.toggle('active');
+	}
+</script>
+</body>
+</html>
